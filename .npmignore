@@ -4,7 +4,6 @@
 .npmignore
 karma.conf.js
 logo
-modules
 scripts
 tests.webpack.js
 webpack.config.js
