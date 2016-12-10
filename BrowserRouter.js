@@ -43,7 +43,12 @@ var BrowserRouter = function (_Component) {
         keyLength = _props.keyLength;
 
 
-    this.history = (0, _createBrowserHistory2.default)(basename, forceRefresh, getUserConfirmation, keyLength);
+    this.history = (0, _createBrowserHistory2.default)({
+      basename: basename,
+      forceRefresh: forceRefresh,
+      getUserConfirmation: getUserConfirmation,
+      keyLength: keyLength
+    });
   };
 
   BrowserRouter.prototype.render = function render() {
